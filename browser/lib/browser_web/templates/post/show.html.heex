@@ -1,0 +1,28 @@
+<h1>Show Post</h1>
+
+<ul>
+
+  <li>
+    <strong>Breed</strong>
+    <%= @post.breed %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @post.name %>
+  </li>
+
+    <li>
+    <strong>Age:</strong>
+    <%= @post.age %>
+  </li>
+
+     <li>
+    <strong>Avatar:</strong>
+      <%= @post.avatar %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.post_path(@conn, :edit, @post) %></span> |
+<span><%= link "Back", to: Routes.post_path(@conn, :index) %></span>
